@@ -10,6 +10,9 @@ add_executable(OpenGl scr/main.cpp)
 
 target_include_directories(OpenGl PRIVATE src)
 
+# AMSTL
+target_include_directories(OpenGl PRIVATE vendor/AMSTL/include)
+
 # GLFW
 add_subdirectory(vendor/glfw)
 
